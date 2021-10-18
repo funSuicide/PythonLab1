@@ -33,7 +33,6 @@ for r, d, f in os.walk(directory_to_extract_to):
         if hashlib.md5(t_f_d).hexdigest() == target_hash:
             target_file = file
             target_file_data = open(file, 'r').read()
-
 print(target_file)
 print(target_file_data)
 
